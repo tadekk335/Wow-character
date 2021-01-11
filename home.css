@@ -1,0 +1,281 @@
+:root {
+  --titleYellow: #f8b700;
+}
+
+h1 {
+  color: var(--titleYellow);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+  background-color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #000000;
+
+}
+
+li {
+  text-align: center;
+  width: 25%;
+  list-style-type: none;
+  font-size: 3vh;
+}
+
+li a {
+  border-right: 1px solid #bbb;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #f8b700;
+  font-family: monospace;
+}
+
+li a:hover {
+  background-color: #73aacc;
+}
+
+.kukulkan {
+  background-image: url(photos/Kukulkan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#stats {
+  display: flex;
+  height: 1000px;
+  text-align: center;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.characterStats {
+  width: 25%;
+  height: auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid #999;
+  text-align: center;
+
+
+}
+
+table {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  width: 15%;
+  background: linear-gradient(#777, #444);
+  border-left: 1px solid #555;
+  border-right: 1px solid #777;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 0 #999;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  text-shadow: 0 1px 0 #000;
+  color: var(--titleYellow);
+  font-size: 1.866rem;
+
+}
+
+td {
+  font-size: 1.866rem;
+  line-height: 1.5;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, .8);
+  font-weight: 400;
+  background-color: black;
+}
+
+.statsTitle {
+  color: var(--titleYellow)
+}
+
+.characterRuns {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  background-color: black;
+}
+
+.dungeonBck {
+  content: "";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  clear: both;
+  width: 100%;
+
+
+}
+
+.chakram {
+  background-image: url(photos/chakram.png);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.bckSize {
+  width: 300px;
+  height: 100px;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+
+}
+
+
+.chakramtext {
+  position: absolute;
+  font-size: 1.866rem;
+  line-height: 1.5;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, .8);
+  font-weight: 400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.mos {
+  background-image: url(photos/mos.jpg);
+}
+
+.dos {
+
+  background-image: url(photos/dos.jpg);
+}
+
+.hoa {
+  background-image: url(photos/hoa.jpg);
+}
+
+.sd {
+  background-image: url(photos/sd.jpg);
+}
+
+.pl {
+  background-image: url(photos/pl.jpg);
+}
+
+.nw {
+  background-image: url(photos/nw.jpg);
+}
+
+.top {
+  background-image: url(photos/top.jpg);
+}
+
+.soa {
+  background-image: url(photos/soa.jpg);
+}
+
+.dungName {
+  text-align: center;
+  margin: 0%;
+  color: var(--titleYellow);
+}
+
+.dungTime {
+  text-align: center;
+  margin: 0%;
+  color: #fff;
+}
+
+
+.tabelaProgress {
+  border: 1px solid #3f4f56;
+  width: 25%;
+  padding: 8px;
+
+}
+.raidphoto {
+  width: 100%;
+  position: relative;
+}
+
+.meter {
+  width: 90%;
+  height: 20px;
+  position: relative;
+  background: #555;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+  display: block;
+  height: 100%;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(center bottom,
+      rgb(43, 194, 83) 37%,
+      rgb(84, 240, 84) 69%);
+  box-shadow:
+    inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.orange>span {
+  background-color: #f1a165;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}
+
+.red>span {
+  background-color: #f0a3a3;
+  background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+label {
+  color: var(--titleYellow);
+}
+
